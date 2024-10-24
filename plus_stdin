@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-# SPDX-FileCopyrightText: 2024 Kohaku Hirose <hirosekohaku@gmail.com>
+# SPDX-FileCopyrightText: 2024 Kohaku Hirose 　　　　　
+# SPDX-License-Identifier: BSD-3-Clause
 
 import sys
-
 
 def tonum(s):
     try:
