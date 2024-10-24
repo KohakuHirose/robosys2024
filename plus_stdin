@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+# SPDX-FileCopyrightText: 2024 Kohaku Hirose <hirosekohaku@gmail.com>
+
 import sys
 
 
