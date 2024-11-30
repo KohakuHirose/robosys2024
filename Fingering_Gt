@@ -1,0 +1,85 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2024 Kohaku Hirose 　　　　　
+# SPDX-License-Identifier: BSD-3-Clause
+
+import sys
+
+# コードの情報を定義
+chord_diagrams = {
+    "C": ["x 3 2 0 1 0 1"],
+    "D": ["x x 0 2 3 2 1"],
+    "E": ["0 2 2 1 0 0 1"],
+    "F": ["1 3 3 2 1 1 1"],
+    "G": ["3 2 0 0 0 3 1"],
+    "A": ["x 0 2 2 2 0 1"],
+    "B": ["x 2 4 4 4 2 1"],
+}
+
+# フレットボードの基盤を定義
+fretboard_base = [
+    "┌───┬───┬───┬───┬",
+    "├───┼───┼───┼───┼",
+    "├───┼───┼───┼───┼",
+    "├───┼───┼───┼───┼",
+    "├───┼───┼───┼───┼",
+    "└───┴───┴───┴───┴",
+
+]
+
+# 弦の名前
+strings = ["e", "B", "G", "D", "A", "E"]
+
+# フレットボードに押さえる位置を反映
+def apply_chord_to_fretboard(base, diagram, base_fret):
+    fretboard = base.copy()
+    for string_index in range(6):  # 6本の弦
+        fret_position = diagram[5 - string_index]  # 下から上の順でアクセス
+        if fret_position not in ["x", "0"]:  # 押さえる場所のみ変更
+            fret = int(fret_position)
+            row = string_index  # 上から順に弦に対応する行
+            col = 2 + 4 * (fret - 1)  # フレット位置の列を計算
+            fretboard[row] = fretboard[row][:col] + "●" + fretboard[row][col + 1:]
+    return fretboard
+
+def display_fretboard_with_info(fretboard, diagram, base_fret):
+    result = []
+    for string_index in range(6):  # 6本の弦
+        line = fretboard[string_index]
+        fret_info = diagram[5 - string_index]  # 弦の押さえ情報
+        symbol = "o" if fret_info == "0" else "x" if fret_info == "x" else " "
+        result.append(f"{strings[string_index]} {symbol} {line}")
+
+    # フレット番号を追加
+    fret_numbers = "      " + "   ".join(str(base_fret + i) for i in range(4))
+    result.append(fret_numbers)
+    return "\n".join(result)
+
+
+# ダイアグラムの描画
+def draw_chord(chord_name):
+    if chord_name not in chord_diagrams:
+        print("エラー：C, D, E, F, G, A, Bのいずれかを入力してください。")
+        return False
+
+    diagram = chord_diagrams[chord_name][0].split()
+    base_fret = int(diagram[-1])
+    fretboard = apply_chord_to_fretboard(fretboard_base, diagram, base_fret)
+    print(f"コード: {chord_name}")
+    print(display_fretboard_with_info(fretboard, diagram, base_fret))
+    print()
+    return True
+
+# メイン処理
+def main():
+    for line in sys.stdin:
+        chord_name = line.strip()
+        if chord_name:
+            success = draw_chord(chord_name)
+            if not success:
+                sys.exit(1)
+
+        else:
+            sys.exit(1)
+
+if __name__ == "__main__":
+    main()
