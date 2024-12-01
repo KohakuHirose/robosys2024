@@ -93,11 +93,11 @@ done
 
 out=$(echo H | ./Fingering_Gt)
 [ $? = 1 ] || ng "$LINENO"
-[ "${out}" = "エラー：C, D, E, F, G, A, Bのいずれかを入力してください。" ] || ng "$LINENO"
+[ "${out}" = "登録されていません" ] || ng "$LINENO"
 
 out=$(echo あ | ./Fingering_Gt)
 [ $? = 1 ] || ng "$LINENO"
-[ "${out}" = "エラー：C, D, E, F, G, A, Bのいずれかを入力してください。" ] || ng "$LINENO"
+[ "${out}" = "登録されていません" ] || ng "$LINENO"
 
 out=$(echo | ./Fingering_Gt)
 [ $? = 1 ] || ng "$LINENO"
