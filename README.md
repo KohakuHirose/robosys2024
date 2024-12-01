@@ -7,7 +7,7 @@
 [![license](https://img.shields.io/badge/license-BSD--3--Clause-green?style=flat)](https://github.com/KohakuHirose/robosys2024/tree/main?tab=BSD-3-Clause-1-ov-file)
 
 ## 概要
-入力されたコードを、ダイアグラム表示するためのコマンド。
+入力されたコードを、ダイアグラム表示するためのコマンドです。
 
 ### 対応しているコード
 |      |      |      |      |      |      |      |
@@ -37,20 +37,41 @@ cd robosys2024
 ```
 
 ### 実行方法
-実行方法は以下の通り。
+実行方法は以下の通りです。
 ```
 echo [コード名] | ./Fingering_Gt
 ```
+上記の対応しているコードを［コード名］に入力します。
+
 
 ### 実行例
 ```
 $ echo C | ./Fingering_Gt
+コード: C
+e o ┌───┬───┬───┬───┬
+B   ├─●─┼───┼───┼───┼
+G o ├───┼───┼───┼───┼
+D   ├───┼─●─┼───┼───┼
+A   ├───┼───┼─●─┼───┼
+E x └───┴───┴───┴───┴
+      1   2   3   4
+```
+```
+$ echo Edim | ./Fingering_Gt
+コード: Edim
+e x ┌───┬───┬───┬───┬
+B   ├───┼─●─┼───┼───┼
+G   ├───┼───┼─●─┼───┼
+D   ├───┼─●─┼───┼───┼
+A   ├─●─┼───┼───┼───┼
+E x └───┴───┴───┴───┴
+      7   8   9   10
+```
+- 横線がギターの弦、縦線がフレットを表します。
+- 弦を押さえる位置に●を表示します。
+- 左側には、対応する弦の種類と開放弦にはo、ミュートにはｘを表示します。
+- 下側には、対応するフレット数を表示します。
 
-```
-```
-$ echo C | ./Fingering_Gt
-
-```
 ## 必要なソフトウェア
 - Python
 	- テスト済みバージョン: 3.7~3.10
@@ -58,9 +79,9 @@ $ echo C | ./Fingering_Gt
 ## テスト環境
 - Ubuntu 22.04 LTS
 
-# ライセンス
+## ライセンス
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
 - このパッケージのコードの一部は，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，本人の許可を得て自身の著作としたものです．
-    - [ryuichiueda/my_slides robosys_2024](https://github.com/ryuichiueda/my_slides/tree/master/robosys_2024)
+    - [ryuichiueda/slides_marp robosys2024](https://github.com/ryuichiueda/slides_marp/tree/master/robosys2024)
 
  © 2024 Kohaku Hirose
