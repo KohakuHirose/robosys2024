@@ -31,6 +31,7 @@
 
 ## 使い方
 ### リポジトリのクローン方法
+以下の通りにリポジトリをクローンしてください。
 ```
 git clone https://github.com/KohakuHirose/robosys2024.git
 cd robosys2024
