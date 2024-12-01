@@ -11,6 +11,7 @@
 
 ### 対応しているコード
 |C     |D     |E     |F     |G     |A     |B     |
+|:-|:-|:-|:-|:-|:-|:-|
 |Cm    |Dm    |Em    |Fm    |Gm    |Am    |Bm    |
 |Cmaj7 |Dmaj7 |Emaj7 |Fmaj7 |Gmaj7 |Amaj7 |Bmaj7 |
 |C7    |D7    |E7    |F7    |G7    |A7    |B7    |
