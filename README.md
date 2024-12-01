@@ -3,13 +3,14 @@
 
 # ギターコードダイアグラム表示
 
-![test](https://github.com/KohakuHirose/robosys2024/actions/workflows/test.yml/badge.svg)(https://github.com/KohakuHirose/robosys2024/actions/workflows/test.yml)
-![license](https://img.shields.io/badge/license-BSD--3--Clause-green?style=flat)(https://github.com/KohakuHirose/robosys2024/tree/main?tab=BSD-3-Clause-1-ov-file)
+[![test](https://github.com/KohakuHirose/robosys2024/actions/workflows/test.yml/badge.svg)](https://github.com/KohakuHirose/robosys2024/actions/workflows/test.yml)
+[![license](https://img.shields.io/badge/license-BSD--3--Clause-green?style=flat)](https://github.com/KohakuHirose/robosys2024/tree/main?tab=BSD-3-Clause-1-ov-file)
 
 ## 概要
 入力されたコードを、ダイアグラム表示するためのコマンド。
 
 ### 対応しているコード
+|      |      |      |      |      |      |      |
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 |C     |D     |E     |F     |G     |A     |B     |
 |Cm    |Dm    |Em    |Fm    |Gm    |Am    |Bm    |
