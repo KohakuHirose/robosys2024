@@ -169,14 +169,16 @@ def display_fretboard_with_info(fretboard, diagram, base_fret):
 
 # ダイアグラムの描画
 def draw_chord(chord_name):
-    if chord_name not in chord_diagrams:
-        print("登録されていません")
+    actual_chord_name = next((key for key in chord_diagrams if key.lower() == chord_name), None)
+
+    if not actual_chord_name:
+        sys.stderr.write("登録されていません\n")
         return False
 
-    diagram = chord_diagrams[chord_name][0].split()
+    diagram = chord_diagrams[actual_chord_name][0].split()
     base_fret = int(diagram[-1])
     fretboard = apply_chord_to_fretboard(fretboard_base, diagram, base_fret)
-    print(f"コード: {chord_name}")
+    print(f"コード: {actual_chord_name}")
     print(display_fretboard_with_info(fretboard, diagram, base_fret))
     print()
     return True
@@ -184,7 +186,7 @@ def draw_chord(chord_name):
 # メイン処理
 def main():
     for line in sys.stdin:
-        chord_name = line.strip()
+        chord_name = line.strip().lower()
         if chord_name:
             success = draw_chord(chord_name)
             if not success:
