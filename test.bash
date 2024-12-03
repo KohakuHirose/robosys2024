@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash -x
 
 ng () {
 	echo ${1}行目が違うよ
