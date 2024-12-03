@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash 
 
 ng () {
 	echo ${1}行目が違うよ
@@ -78,11 +78,11 @@ done
 
 out=$(echo H | ./Fingering_Gt)
 [ $? = 1 ] || ng "$LINENO"
-[ "${out}" = "登録されていません" ] || ng "$LINENO"
+[ "${out}" = "" ] || ng "$LINENO"
 
 out=$(echo あ | ./Fingering_Gt)
 [ $? = 1 ] || ng "$LINENO"
-[ "${out}" = "登録されていません" ] || ng "$LINENO"
+[ "${out}" = "" ] || ng "$LINENO"
 
 out=$(echo | ./Fingering_Gt)
 [ $? = 1 ] || ng "$LINENO"

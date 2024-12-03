@@ -172,7 +172,7 @@ def draw_chord(chord_name):
     actual_chord_name = next((key for key in chord_diagrams if key.lower() == chord_name), None)
 
     if not actual_chord_name:
-        print("登録されていません")
+        sys.stderr.write("登録されていません\n")
         return False
 
     diagram = chord_diagrams[actual_chord_name][0].split()
