@@ -6,7 +6,7 @@
 [![test](https://github.com/KohakuHirose/robosys2024/actions/workflows/test.yml/badge.svg)](https://github.com/KohakuHirose/robosys2024/actions/workflows/test.yml)
 [![license](https://img.shields.io/badge/license-BSD--3--Clause-green?style=flat)](https://github.com/KohakuHirose/robosys2024/tree/main?tab=BSD-3-Clause-1-ov-file)
 
-## 📖 概要
+## 概要
 - 入力されたコードを、ダイアグラム表示するためのコマンドです。
 - ギタリストの練習やコード確認に役立ちます。
 
@@ -30,7 +30,7 @@
 | ディミニッシュ7 | Cdim7   | Ddim7   | Edim7   | Fdim7   | Gdim7   | Adim7   | Bdim7   |
 | マイナー7フラット5 | Cm7-5   | Dm7-5   | Em7-5   | Fm7-5   | Gm7-5   | Am7-5   | Bm7-5   |
 
-## 🎵 使い方
+## 使い方
 ### リポジトリのクローン方法
 以下の通りにリポジトリをクローンしてください。
 ```
@@ -75,14 +75,14 @@ E x └───┴───┴───┴───┴
 - 左側には、対応する弦の種類と開放弦にはo、ミュートにはｘを表示します。
 - 下側には、対応するフレット数を表示します。
 
-## 🛠️ 必要なソフトウェア
+## 必要なソフトウェア
 - **Python**
 	- テスト済みバージョン: 3.7~3.10
 
-## ✅ テスト環境
+## テスト環境
 - **Ubuntu** 22.04 LTS
 
-## 📜 ライセンス
+## ライセンス
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
 - このパッケージのコードの一部は，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，本人の許可を得て自身の著作としたものです．
     - [ryuichiueda/slides_marp/robosys2024](https://github.com/ryuichiueda/slides_marp/tree/master/robosys2024)
