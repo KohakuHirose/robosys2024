@@ -72,19 +72,19 @@ E x └───┴───┴───┴───┴
       1   2   3   4'
 
 for chord in "${!expected_outputs[@]}"; do
-    out=$(echo "$chord" | ./Fingering_Gt)
+    out=$(echo "$chord" | ./fingering_gt)
     [ "$out" = "${expected_outputs[$chord]}" ] || ng "$LINENO"
 done
 
-out=$(echo H | ./Fingering_Gt)
+out=$(echo H | ./fingering_gt)
 [ $? = 1 ] || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
-out=$(echo あ | ./Fingering_Gt)
+out=$(echo あ | ./fingering_gt)
 [ $? = 1 ] || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
-out=$(echo | ./Fingering_Gt)
+out=$(echo | ./fingering_gt)
 [ $? = 1 ] || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 

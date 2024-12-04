@@ -41,7 +41,7 @@ cd robosys2024
 ### 実行方法
 実行方法は以下の通りです。
 ```
-echo [コード名] | ./Fingering_Gt
+echo [コード名] | ./fingering_gt
 ```
 - 上記の対応しているコードを［コード名］に入力します。
 - コード名は大文字・小文字の区別をしません。
@@ -49,7 +49,7 @@ echo [コード名] | ./Fingering_Gt
 
 ### 実行例
 ```
-$ echo C | ./Fingering_Gt
+$ echo C | ./fingering_gt
 コード: C
 e o ┌───┬───┬───┬───┬
 B   ├─●─┼───┼───┼───┼
@@ -60,7 +60,7 @@ E x └───┴───┴───┴───┴
       1   2   3   4
 ```
 ```
-$ echo Edim | ./Fingering_Gt
+$ echo Edim | ./fingering_gt
 コード: Edim
 e x ┌───┬───┬───┬───┬
 B   ├───┼─●─┼───┼───┼
