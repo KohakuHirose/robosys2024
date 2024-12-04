@@ -11,24 +11,8 @@
 - ギタリストの練習やコード確認に役立ちます。
 
 ### 対応しているコード
-|          | C       | D       | E       | F       | G       | A       | B       |
-|----------|---------|---------|---------|---------|---------|---------|---------|
-| メジャー | C       | D       | E       | F       | G       | A       | B       |
-| マイナー | Cm      | Dm      | Em      | Fm      | Gm      | Am      | Bm      |
-| メジャー7 | Cmaj7   | Dmaj7   | Emaj7   | Fmaj7   | Gmaj7   | Amaj7   | Bmaj7   |
-| ドミナント7 | C7      | D7      | E7      | F7      | G7      | A7      | B7      |
-| マイナー7 | Cm7     | Dm7     | Em7     | Fm7     | Gm7     | Am7     | Bm7     |
-| マイナーメジャー7 | CmM7    | DmM7    | EmM7    | FmM7    | GmM7    | AmM7    | BmM7    |
-| サスフォー | Csus4   | Dsus4   | Esus4   | Fsus4   | Gsus4   | Asus4   | Bsus4   |
-| サスフォー7 | C7sus4  | D7sus4  | E7sus4  | F7sus4  | G7sus4  | A7sus4  | B7sus4  |
-| アドナインス | Cadd9   | Dadd9   | Eadd9   | Fadd9   | Gadd9   | Aadd9   | Badd9   |
-| マイナーアドナインス | Cmadd9  | Dmadd9  | Emadd9  | Fmadd9  | Gmadd9  | Amadd9  | Bmadd9  |
-| シックス | C6      | D6      | E6      | F6      | G6      | A6      | B6      |
-| マイナーシックス | Cm6     | Dm6     | Em6     | Fm6     | Gm6     | Am6     | Bm6     |
-| オーギュメント | Caug    | Daug    | Eaug    | Faug    | Gaug    | Aaug    | Baug    |
-| ディミニッシュ | Cdim    | Ddim    | Edim    | Fdim    | Gdim    | Adim    | Bdim    |
-| ディミニッシュ7 | Cdim7   | Ddim7   | Edim7   | Fdim7   | Gdim7   | Adim7   | Bdim7   |
-| マイナー7フラット5 | Cm7-5   | Dm7-5   | Em7-5   | Fm7-5   | Gm7-5   | Am7-5   | Bm7-5   |
+- 対応してるコードの詳細は、末尾参照。(#対応コード参照)
+|C|D|E|F|G|A|B|
 
 ## 使い方
 ### リポジトリのクローン方法
@@ -88,3 +72,24 @@ E x └───┴───┴───┴───┴
     - [ryuichiueda/slides_marp/robosys2024](https://github.com/ryuichiueda/slides_marp/tree/master/robosys2024)
 
  © 2024 Kohaku Hirose
+
+## 対応コード参照
+
+|          | C       | D       | E       | F       | G       | A       | B       |
+|----------|---------|---------|---------|---------|---------|---------|---------|
+| メジャー | C       | D       | E       | F       | G       | A       | B       |
+| マイナー | Cm      | Dm      | Em      | Fm      | Gm      | Am      | Bm      |
+| メジャー7 | Cmaj7   | Dmaj7   | Emaj7   | Fmaj7   | Gmaj7   | Amaj7   | Bmaj7   |
+| ドミナント7 | C7      | D7      | E7      | F7      | G7      | A7      | B7      |
+| マイナー7 | Cm7     | Dm7     | Em7     | Fm7     | Gm7     | Am7     | Bm7     |
+| マイナーメジャー7 | CmM7    | DmM7    | EmM7    | FmM7    | GmM7    | AmM7    | BmM7    |
+| サスフォー | Csus4   | Dsus4   | Esus4   | Fsus4   | Gsus4   | Asus4   | Bsus4   |
+| サスフォー7 | C7sus4  | D7sus4  | E7sus4  | F7sus4  | G7sus4  | A7sus4  | B7sus4  |
+| アドナインス | Cadd9   | Dadd9   | Eadd9   | Fadd9   | Gadd9   | Aadd9   | Badd9   |
+| マイナーアドナインス | Cmadd9  | Dmadd9  | Emadd9  | Fmadd9  | Gmadd9  | Amadd9  | Bmadd9  |
+| シックス | C6      | D6      | E6      | F6      | G6      | A6      | B6      |
+| マイナーシックス | Cm6     | Dm6     | Em6     | Fm6     | Gm6     | Am6     | Bm6     |
+| オーギュメント | Caug    | Daug    | Eaug    | Faug    | Gaug    | Aaug    | Baug    |
+| ディミニッシュ | Cdim    | Ddim    | Edim    | Fdim    | Gdim    | Adim    | Bdim    |
+| ディミニッシュ7 | Cdim7   | Ddim7   | Edim7   | Fdim7   | Gdim7   | Adim7   | Bdim7   |
+| マイナー7フラット5 | Cm7-5   | Dm7-5   | Em7-5   | Fm7-5   | Gm7-5   | Am7-5   | Bm7-5   |
